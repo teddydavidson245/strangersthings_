@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import {Routes, Route} from "react-router-dom";
 import './App.css'
-import Posts from '../../strangersthings/strangersthings/src/components/Posts';
-import Profile from '../../strangersthings/strangersthings/src/components/Profile';
-import Login from '../../strangersthings/strangersthings/src/components/Login';
-import Register from '../../strangersthings/strangersthings/src/components/Register';
-import Navbar from '../../strangersthings/strangersthings/src/components/Navbar';
-import AuthContainer from '../../strangersthings/strangersthings/src/components/AuthForm';
-import ListingCreationForm from '../../strangersthings/strangersthings/src/components/Createpost';
+import Posts from './components/Posts';
+import Profile from './components/Profile';
+import Login from './components/Login';
+import Register from './components/Register';
+import Navbar from './components/Navbar';
+import AuthContainer from './components/AuthForm';
+import ListingCreationForm from './components/Createpost';
 
 function App(){
   const [token, setToken] = useState(localStorage.getItem("token"));
